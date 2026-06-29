@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Rama Al Mawed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Rama <span>Al Mawed</span></a>
+
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="#" class="projects-toggle">Projects</a>
+      <ul class="dropdown-menu">
+        <li><a href="art.html">Art</a></li>
+        <li><a href="graphic-design.html">Graphic Design</a></li>
+        <li><a href="web-design.html">Web Design</a></li>
+        <li><a href="video.html">Video</a></li>
+      </ul>
+    </li>
+
+    <li><a href="cv.html" class="active">CV</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="art-layout">
+
+    <aside class="art-side-nav">
+      <a href="#profile">Profile</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#thesis">Thesis</a>
+      <a href="#skills">Skills</a>
+    </aside>
+
+    <main class="art-content">
+
+      <!-- HERO -->
+      <section class="cv-hero" id="profile">
+        <div>
+          <p class="tool">Digital Media · UX/UI · Web Design · Graphic Design</p>
+          <h1>Rama <span>Al Mawed</span></h1>
+
+          <p>
+            Creative and structured digital media graduate with a bachelor's degree in Digital Media
+            and ongoing master studies in Leadership in Digitalized Organizations at University West.
+            I combine design, web, UX research, teaching, and analytical thinking to create clear,
+            user-friendly and visually strong digital solutions.
+          </p>
+
+          <div class="cv-contact">
+            <p><strong>Email:</strong> rama.almawed@gmail.com</p>
+            <p><strong>Phone:</strong> 073 573 89 90</p>
+          </div>
+
+          <div class="cv-buttons">
+            <a href="contact.html" class="btn-outline-dark">Contact Me</a>
+          </div>
+        </div>
+
+        <img src="Portfolio/cv photo.jpg" alt="Rama Al Mawed portrait" class="cv-photo">
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="art-category" id="education">
+        <div class="section-title">
+          <h2>Education</h2>
+        </div>
+
+        <div class="cv-list">
+
+          <div class="cv-item">
+            <span>2025 — Present</span>
+            <h3>Master Programme in Leadership in Digitalized Organizations</h3>
+            <p>University West, Trollhättan</p>
+
+            <p>
+              Through this master programme, I am developing a deeper understanding of how digitalization
+              changes organizations, leadership, collaboration, and work processes. The programme connects
+              technology with people, strategy, organizational development, and change management.
+            </p>
+
+            <ul>
+              <li>Digital leadership and leadership in technology-driven organizations.</li>
+              <li>Organizational change, transformation, and digital work practices.</li>
+              <li>Project management, teamwork, and communication in digital environments.</li>
+              <li>AI, digitalization, and how organizations can use technology in a meaningful way.</li>
+              <li>Analytical writing, research-based reflection, and academic argumentation.</li>
+            </ul>
+          </div>
+
+          <div class="cv-item">
+            <span>2022 — 2025</span>
+            <h3>Bachelor’s Degree in Digital Media</h3>
+            <p>University West, Trollhättan</p>
+
+            <p>
+              My bachelor’s degree gave me a broad foundation in digital design, web development,
+              visual communication, UX, media production, and creative digital problem-solving.
+              During the programme, I worked with both practical design projects and research-based assignments.
+            </p>
+
+            <h4>What I learned during Digital Media</h4>
+
+            <div class="cv-skill-groups">
+              <div>
+                <h5>Web Design & Development</h5>
+                <p>
+                  I learned how to build responsive websites using HTML, CSS, JavaScript, React and WordPress.
+                  I also developed an understanding of layout, navigation, accessibility, information structure,
+                  and how design choices affect user experience.
+                </p>
+              </div>
+
+              <div>
+                <h5>UX/UI Design</h5>
+                <p>
+                  I worked with user-centered design, wireframes, prototypes, usability testing, observation,
+                  interviews, user flows, and Figma. I learned how to connect design decisions to real user needs.
+                </p>
+              </div>
+
+              <div>
+                <h5>Graphic Design</h5>
+                <p>
+                  I developed skills in typography, layout, color, branding, visual hierarchy and identity design.
+                  I worked with posters, books, logos, magazines, teaching materials and digital content.
+                </p>
+              </div>
+
+              <div>
+                <h5>Adobe Creative Cloud</h5>
+                <p>
+                  I used Adobe Photoshop, Illustrator, InDesign, After Effects and Premiere Pro for image editing,
+                  branding, print design, motion graphics, video editing and visual storytelling.
+                </p>
+              </div>
+
+              <div>
+                <h5>Digital Media Production</h5>
+                <p>
+                  I learned motion design, animation, photography, video editing, content creation,
+                  storytelling, image editing and how to adapt content for different digital platforms.
+                </p>
+              </div>
+
+              <div>
+                <h5>Communication & Writing</h5>
+                <p>
+                  I practiced journalistic writing, digital communication, social media content, visual communication,
+                  academic writing and how to present ideas clearly for different audiences.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-item">
+            <span>2019 — 2022</span>
+            <h3>Upper Secondary Education — Art and Design</h3>
+            <p>Sinclair, Uddevalla · Specialization: Fashion Design</p>
+
+            <p>
+              My high school education gave me an early foundation in creativity, visual expression,
+              sketching, composition, design thinking, color, form, and fashion-related design work.
+              It helped shape my interest in visual design and creative production.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      
+      <!-- EXPERIENCE -->
+      <section class="art-category" id="experience">
+
+    <div class="section-title">
+        <h2>Work Experience</h2>
+    </div>
+
+    <div class="cv-list">
+
+        <!-- INTERNSHIP -->
+
+        <div class="cv-item">
+
+            <span>2026</span>
+
+            <h3>Research Intern — University West</h3>
+
+            <p>
+                Participated in a research project focused on improving scheduling processes within
+                higher education. The internship provided hands-on experience in organizational
+                analysis, process mapping, research methods, and collaboration with administrative
+                staff to identify opportunities for more efficient digital workflows.
+            </p>
+
+            <ul>
+                <li>Mapped and analyzed scheduling workflows and administrative processes.</li>
+                <li>Observed daily scheduling activities and documented existing work practices.</li>
+                <li>Conducted interviews with scheduling administrators and other stakeholders.</li>
+                <li>Identified bottlenecks and improvement opportunities through qualitative analysis.</li>
+                <li>Explored AI-supported solutions for improving scheduling efficiency and reducing repetitive tasks.</li>
+                <li>Documented findings and presented recommendations based on observations and collected data.</li>
+            </ul>
+
+        </div>
+
+        <!-- GRAPHIC DESIGNER -->
+
+        <div class="cv-item">
+
+            <span>2022 — Present</span>
+
+            <h3>Graphic Designer & Co-founder — Alzenins</h3>
+
+            <p>
+                Responsible for the visual identity and creative direction of Alzenins, an online
+                Japanese learning platform. Designed educational materials, digital products,
+                branding, and marketing assets while ensuring a consistent visual identity across
+                multiple platforms.
+            </p>
+
+            <ul>
+                <li>Designed the company's visual identity, branding, and logo system.</li>
+                <li>Designed and maintained the company's website and digital interface.</li>
+                <li>Produced textbooks, workbooks, planners, PDFs, presentations, and teaching materials.</li>
+                <li>Created social media graphics and promotional content.</li>
+                <li>Worked with layout, typography, color systems, and print-ready production.</li>
+                <li>Managed the complete design process from concept development to final delivery.</li>
+            </ul>
+
+        </div>
+
+        <!-- TEACHER -->
+
+        <div class="cv-item">
+
+            <span>2020 — Present</span>
+
+            <h3>Japanese Language Teacher — Alzenins</h3>
+
+            <p>
+                Taught Japanese online to more than 500 Arabic-speaking students worldwide while
+                developing educational resources and structured learning material tailored to
+                different learning styles and language backgrounds.
+            </p>
+
+            <ul>
+                <li>Planned and delivered online Japanese language courses.</li>
+                <li>Developed original educational content and teaching materials.</li>
+                <li>Created interactive lessons covering grammar, vocabulary, kanji, hiragana, and katakana.</li>
+                <li>Monitored student progress and continuously improved learning resources.</li>
+                <li>Adapted teaching methods to support students with different educational backgrounds.</li>
+                <li>Integrated cultural knowledge to enrich language learning and student engagement.</li>
+            </ul>
+
+        </div>
+
+        <!-- SUBSTITUTE TEACHER -->
+
+        <div class="cv-item">
+
+            <span>2022 — 2025</span>
+
+            <h3>Substitute Teacher — Vänersborg Municipality</h3>
+
+            <p>
+                Worked in different preschools, supporting educators in everyday activities and
+                contributing to a safe, structured, and stimulating learning environment for
+                children.
+            </p>
+
+            <ul>
+                <li>Supported teachers in daily educational and care activities.</li>
+                <li>Helped plan and carry out creative and educational activities.</li>
+                <li>Ensured children's wellbeing, safety, and daily routines.</li>
+                <li>Collaborated with multidisciplinary teams across different preschools.</li>
+                <li>Adapted quickly to new workplaces, routines, and teams.</li>
+                <li>Built strong communication and teamwork skills through daily collaboration.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+      <!-- THESIS -->
+      <section class="art-category" id="thesis">
+        <div class="section-title">
+          <h2>Bachelor Thesis</h2>
+        </div>
+
+        <article class="art-project reverse">
+          <div class="single-art">
+            <img src="Portfolio/Examensarbete/thesis.png" alt="UX thesis H&M and Zara" onclick="openLightbox(this)">
+          </div>
+
+          <div class="art-text">
+            <h3>UX Analysis of H&M and Zara</h3>
+
+            <p>
+              My bachelor thesis studied how aesthetic and functional design principles affect the user
+              experience on fashion e-commerce websites, using H&M and Zara as case studies.
+            </p>
+
+            <ul>
+              <li>Conducted user testing with 11 participants.</li>
+              <li>Used Think-Aloud, observation and semi-structured interviews.</li>
+              <li>Analyzed navigation, filtering, search, product presentation and decision-making.</li>
+              <li>Compared how aesthetics and usability influenced user experience.</li>
+              <li>Identified UX problems and improvement areas.</li>
+              <li>Developed recommendations for better e-commerce usability.</li>
+            </ul>
+
+            <p class="tool">
+              Methods: UX Research · Think-Aloud · Observation · Interviews · Analysis
+            </p>
+
+            <a class="details-link" href="projects/hm-zara-thesis.html">
+              View project details →
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="art-category" id="skills">
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+
+        <div class="cv-skill-groups">
+          <div>
+            <h5>Design</h5>
+            <p>Graphic design, layout, typography, branding, visual identity, color, composition, print design.</p>
+          </div>
+
+          <div>
+            <h5>UX/UI</h5>
+            <p>User research, usability testing, wireframes, prototypes, user flows, information architecture, Figma.</p>
+          </div>
+
+          <div>
+            <h5>Web</h5>
+            <p>HTML, CSS, JavaScript, React, WordPress, responsive design, interface design.</p>
+          </div>
+
+          <div>
+            <h5>Adobe</h5>
+            <p>Photoshop, Illustrator, InDesign, After Effects, Premiere Pro.</p>
+          </div>
+
+          <div>
+            <h5>Communication</h5>
+            <p>Teaching, presentation, digital communication, academic writing, journalistic writing, content creation.</p>
+          </div>
+
+          <div>
+            <h5>Personal Kompetenser</h5>
+            <p>Structured, analytical, creative, responsible, solution-oriented, fast learner, detail-oriented, collaborative.</p>
+          </div>
+        </div>
+
+        <div class="skills-grid cv-tags">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">WordPress</span>
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Photoshop</span>
+          <span class="skill-tag">Illustrator</span>
+          <span class="skill-tag">InDesign</span>
+          <span class="skill-tag">After Effects</span>
+          <span class="skill-tag">Premiere Pro</span>
+          <span class="skill-tag">UX Research</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">Graphic Design</span>
+          <span class="skill-tag">Teaching</span>
+        </div>
+      </section>
+
+      <!-- JLPT -->
+      <section class="art-category featured-oc" id="jlpt">
+        <div class="section-title">
+          <h2>Japanese Language Proficiency</h2>
+        </div>
+
+        <div class="cv-highlight">
+          <h3>JLPT N3 — Japanese Language Proficiency Test</h3>
+          <p>
+            I passed JLPT N3 in 2025. This certification shows my ability to understand Japanese
+            grammar, vocabulary, reading, and listening at an intermediate level.
+          </p>
+        </div>
+      </section>
+
+      <!-- LANGUAGES -->
+      <section class="art-category" id="languages">
+        <div class="section-title">
+          <h2>Languages</h2>
+        </div>
+
+        <div class="language-grid">
+          <div><h3>Arabic</h3><p>Native language</p></div>
+          <div><h3>Swedish</h3><p>Very good knowledge</p></div>
+          <div><h3>English</h3><p>Very good knowledge</p></div>
+          <div><h3>Japanese</h3><p>Good knowledge · JLPT N3</p></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('open')">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<footer>
+  <div class="footer-logo">Rama <span>Al Mawed</span></div>
+</footer>
+
+<script>
+function openLightbox(img) {
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox').classList.add('open');
+}
+
+function closeLightbox(e) {
+  if (e.target === document.getElementById('lightbox')) {
+    document.getElementById('lightbox').classList.remove('open');
+  }
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.getElementById('lightbox').classList.remove('open');
+  }
+});
+
+const projectsToggle = document.querySelector(".projects-toggle");
+
+if (projectsToggle) {
+  projectsToggle.addEventListener("click", function(e) {
+    e.preventDefault();
+    this.nextElementSibling.classList.toggle("open");
+  });
+}
+</script>
+
+</body>
+</html>

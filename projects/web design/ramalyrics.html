@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RamaLyrics — Web Design Project</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+<nav>
+  <a class="nav-logo" href="../../index.html">Rama <span>Al Mawed</span></a>
+
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="nav-links">
+    <li><a href="../../index.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="#" class="projects-toggle">Projects</a>
+      <ul class="dropdown-menu">
+        <li><a href="../../art.html">Art</a></li>
+        <li><a href="../../graphic-design.html">Graphic Design</a></li>
+        <li><a href="../../web-design.html" class="active">Web Design</a></li>
+        <li><a href="../../video.html">Video</a></li>
+      </ul>
+    </li>
+
+    <li><a href="../../cv.html">CV</a></li>
+    <li><a href="../../contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="art-layout">
+
+    <aside class="art-side-nav">
+      <a href="#overview">Overview</a>
+      <a href="#idea">Idea</a>
+      <a href="#features">Features</a>
+      <a href="#design">Design</a>
+      <a href="#development">Development</a>
+      <a href="#challenges">Challenges</a>
+      <a href="#tools">Tools</a>
+    </aside>
+
+    <main class="art-content">
+
+      <!-- HERO -->
+      <section class="page-hero art-hero" id="overview">
+        <div>
+          <a href="../../web-design.html" class="details-link">← Back to Web Design</a>
+
+          <h1>RamaLyrics <span>Web App</span></h1>
+
+          <p>
+            RamaLyrics is a React-based music and lyrics web application where users can search
+            for songs, artists, and albums, read lyrics, and listen to music through Spotify.
+          </p>
+        </div>
+      </section>
+
+      <!-- OVERVIEW -->
+      <section class="art-category featured-oc">
+        <div class="section-title">
+          <h2>Project Overview</h2>
+        </div>
+
+        <p class="section-desc">
+          The goal of RamaLyrics was to create a clean, modern, and user-friendly music platform
+          that combines song search, lyrics, artist information, album covers, and Spotify playback
+          in one simple interface.
+        </p>
+
+        <div class="cv-skill-groups">
+          <div>
+            <h5>Project Type</h5>
+            <p>React web app · Front-end development · API integration · Responsive design</p>
+          </div>
+
+          <div>
+            <h5>Main Goal</h5>
+            <p>To build an easy-to-use platform where users can discover music and read lyrics.</p>
+          </div>
+
+          <div>
+            <h5>My Role</h5>
+            <p>UI design, front-end development, API integration, responsive layout, testing and troubleshooting.</p>
+          </div>
+
+          <div>
+            <h5>APIs</h5>
+            <p>Spotify API for music data and Lyrics.ovh API for lyrics.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- IDEA -->
+      <section class="art-category" id="idea">
+        <div class="section-title">
+          <h2>Concept & Idea</h2>
+        </div>
+
+        <article class="art-project">
+          <div class="single-art">
+            <img src="../../Portfolio/web design/RamaLyrics React JS/mockup1.png"
+                 alt="RamaLyrics mockup"
+                 onclick="openLightbox(this)">
+          </div>
+
+          <div class="art-text">
+            <h3>A Simple Music Discovery Platform</h3>
+
+            <p>
+              The idea behind RamaLyrics was to create a simple platform for discovering music,
+              searching for songs and artists, and reading lyrics without making the experience
+              feel complicated.
+            </p>
+
+            <p>
+              I wanted the app to feel clean and easy to understand, with a design that helps
+              users focus on the song, the artist, the album cover, and the lyrics.
+            </p>
+
+            <p>
+              Some early ideas included searching artists by first letter, saving favorite songs,
+              and using a heart button for favorites. These ideas were planned, but not all of them
+              were included because of the project time limit.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="art-category" id="features">
+        <div class="section-title">
+          <h2>Main Features</h2>
+        </div>
+
+        <div class="ramalyrics-feature-grid">
+          <div>
+            <h3>Song Search</h3>
+            <p>Users can search for songs, artists, and albums through Spotify data.</p>
+          </div>
+
+          <div>
+            <h3>Lyrics View</h3>
+            <p>Lyrics are fetched through Lyrics.ovh when available.</p>
+          </div>
+
+          <div>
+            <h3>Spotify Player</h3>
+            <p>Spotify iframe was used so users can listen directly through Spotify.</p>
+          </div>
+
+          <div>
+            <h3>Responsive Layout</h3>
+            <p>The app was designed to work on desktop, tablet, and mobile screens.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- DESIGN -->
+      <section class="art-category" id="design">
+        <div class="section-title">
+          <h2>Design Direction</h2>
+        </div>
+
+        <article class="art-project reverse">
+          <div class="art-images two-images">
+            <img src="../../Portfolio/web design/RamaLyrics React JS/sc1.png"
+                 alt="RamaLyrics screenshot"
+                 onclick="openLightbox(this)">
+
+            <img src="../../Portfolio/web design/RamaLyrics React JS/mobile sc 1.jpg"
+                 alt="RamaLyrics mobile screenshot"
+                 onclick="openLightbox(this)">
+          </div>
+
+          <div class="art-text">
+            <h3>Clean, Readable & Responsive</h3>
+
+            <p>
+              The design focused on readability, especially because lyrics are long text content.
+              I used Lora for lyric text because it gives a softer reading experience, and Josefin Sans
+              for headings and navigation to create a more modern style.
+            </p>
+
+            <p>
+              I used Flexbox and media queries to make the layout responsive. Search results appear
+              in multiple columns on larger screens and become simpler on mobile screens.
+            </p>
+
+            <p>
+              Small hover effects and animations were added to make clickable elements feel more
+              interactive and easier to understand.
+            </p>
+
+            <p class="tool">Design: Responsive Layout · Typography · Hover Effects · UI Structure</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- DEVELOPMENT -->
+      <section class="art-category" id="development">
+        <div class="section-title">
+          <h2>Development Process</h2>
+        </div>
+
+        <div class="process-list">
+          <div>
+            <span>01</span>
+            <h3>React Structure</h3>
+            <p>
+              I built the app with React and divided the interface into reusable components,
+              such as search, lyrics, header, footer, and result sections.
+            </p>
+          </div>
+
+          <div>
+            <span>02</span>
+            <h3>Spotify API</h3>
+            <p>
+              Spotify API was used to fetch songs, artists, album covers, track information,
+              popularity, and other music-related data.
+            </p>
+          </div>
+
+          <div>
+            <span>03</span>
+            <h3>Lyrics.ovh API</h3>
+            <p>
+              Lyrics.ovh was used to fetch lyrics because it was simple to integrate and did not
+              require authentication.
+            </p>
+          </div>
+
+          <div>
+            <span>04</span>
+            <h3>Spotify Embed</h3>
+            <p>
+              I used Spotify iframe to add the music player instead of building a custom audio player.
+            </p>
+          </div>
+
+          <div>
+            <span>05</span>
+            <h3>React Router</h3>
+            <p>
+              React Router was used to manage navigation and routes between different parts of the app.
+            </p>
+          </div>
+
+          <div>
+            <span>06</span>
+            <h3>Responsive Testing</h3>
+            <p>
+              I tested the layout on different screen sizes and adjusted the interface using media queries.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHALLENGES -->
+      <section class="art-category" id="challenges">
+        <div class="section-title">
+          <h2>Challenges & Solutions</h2>
+        </div>
+
+        <div class="cv-skill-groups">
+          <div>
+            <h5>API Choice</h5>
+            <p>
+              I first explored Genius API, but it did not provide lyrics in the way I needed.
+              I also considered Musixmatch, but API access was not available for students.
+              I later used Lyrics.ovh for lyrics.
+            </p>
+          </div>
+
+          <div>
+            <h5>Spotify Authentication</h5>
+            <p>
+              Spotify API required an access token. I solved this by following Spotify’s documentation
+              and using a Base64 encoded Client ID and Client Secret.
+            </p>
+          </div>
+
+          <div>
+            <h5>Special Characters</h5>
+            <p>
+              Some artist and song names included special characters. I used encodeURIComponent
+              to make sure names were correctly formatted in API requests.
+            </p>
+          </div>
+
+          <div>
+            <h5>Routing After Build</h5>
+            <p>
+              React Router caused navigation issues after building the app. The solution was to use
+              basename so routes worked correctly after deployment.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- MOCKUPS -->
+      <section class="art-category" id="mockups">
+        <div class="section-title">
+          <h2>Screenshots & Mockups</h2>
+        </div>
+
+        <p class="section-desc">
+          I will add screenshots and mockups here to show how RamaLyrics works across desktop,
+          tablet, and mobile layouts.
+        </p>
+
+        <div class="ramalyrics-mockup-grid">
+          <img src="../../Portfolio/web design/RamaLyrics React JS/mockup1.png"
+               alt="RamaLyrics mobile mockup"
+               onclick="openLightbox(this)">
+
+          <img src="../../Portfolio/web design/RamaLyrics React JS/mockup 2.png"
+               alt="RamaLyrics tablet mockup"
+               onclick="openLightbox(this)">
+
+          <img src="../../Portfolio/web design/RamaLyrics React JS/mockup3.png"
+               alt="RamaLyrics desktop mockup"
+               onclick="openLightbox(this)">
+        </div>
+      </section>
+
+      <!-- TOOLS -->
+      <section class="art-ending" id="tools">
+        <h2>Tools & Skills</h2>
+
+        <p>
+          This project helped me practice modern front-end development, API integration,
+          responsive design, routing, troubleshooting, and user-centered interface design.
+        </p>
+
+        <p class="tool">
+          React JS · JavaScript · HTML · CSS · Spotify API · Lyrics.ovh API · React Router · Responsive Design
+        </p>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Rama <span>Al Mawed</span></div>
+  
+  <div class="footer-links">
+    <a href="../../art.html">Art</a>
+    <a href="../../graphic-design.html">Design</a>
+    <a href="../../web-design.html">Web</a>
+    <a href="../../video.html">Video</a>
+    <a href="../../contact.html">Contact</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('open')">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+function openLightbox(img) {
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox').classList.add('open');
+}
+
+function closeLightbox(e) {
+  if (e.target === document.getElementById('lightbox')) {
+    document.getElementById('lightbox').classList.remove('open');
+  }
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.getElementById('lightbox').classList.remove('open');
+  }
+});
+
+const projectsToggle = document.querySelector(".projects-toggle");
+
+if (projectsToggle) {
+  projectsToggle.addEventListener("click", function(e) {
+    e.preventDefault();
+    this.nextElementSibling.classList.toggle("open");
+  });
+}
+</script>
+
+</body>
+</html>

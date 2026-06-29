@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arab Kyoushi CMS — Web Design Project</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+<nav>
+  <a class="nav-logo" href="../../index.html">Rama <span>Al Mawed</span></a>
+
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="nav-links">
+    <li><a href="../../index.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="#" class="projects-toggle">Projects</a>
+      <ul class="dropdown-menu">
+        <li><a href="../../art.html">Art</a></li>
+        <li><a href="../../graphic-design.html">Graphic Design</a></li>
+        <li><a href="../../web-design.html" class="active">Web Design</a></li>
+        <li><a href="../../video.html">Video</a></li>
+      </ul>
+    </li>
+
+    <li><a href="../../cv.html">CV</a></li>
+    <li><a href="../../contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="art-layout">
+
+    <aside class="art-side-nav">
+      <a href="#overview">Overview</a>
+      <a href="#context">Context</a>
+      <a href="#wordpress">WordPress</a>
+      <a href="#structure">Structure</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#process">Process</a>
+      <a href="#tools">Tools</a>
+    </aside>
+
+    <main class="art-content">
+
+      <!-- HERO -->
+      <section class="page-hero art-hero" id="overview">
+        <div>
+          <a href="../../web-design.html" class="details-link">← Back to Web Design</a>
+
+          <h1>Arab Kyoushi</h1>
+
+          <p>
+            A WordPress-based CMS concept created as a school project for Arab Kyoushi,
+            the early version of what later became Alzenins. The project focused on creating
+            a structured website for Japanese learning content, lessons, and educational resources.
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTEXT -->
+      <section class="art-category featured-oc" id="context">
+        <div class="section-title">
+          <h2>Project Context</h2>
+        </div>
+
+        <p class="section-desc">
+          Arab Kyoushi was the earlier name and concept behind Alzenins. This WordPress project
+          was created during my studies as a school project, so it was not used as the final live
+          platform. However, it helped me explore how a learning platform could be structured,
+          managed, and designed through a content management system.
+        </p>
+
+        <div class="cv-skill-groups">
+          <div>
+            <h5>Project Type</h5>
+            <p>School project · WordPress website · CMS concept · Learning platform design</p>
+          </div>
+
+          <div>
+            <h5>Brand Context</h5>
+            <p>Created for Arab Kyoushi, which later developed into Alzenins.</p>
+          </div>
+
+          <div>
+            <h5>Important Note</h5>
+            <p>
+              This version was not usable as the real platform because it was built as part of
+              a university assignment, but the concept helped shape later ideas for Alzenins.
+            </p>
+          </div>
+
+          <div>
+            <h5>My Role</h5>
+            <p>
+              I worked on the structure, WordPress setup, page design, content organization,
+              visual layout, and CMS thinking.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORDPRESS -->
+      <section class="art-category" id="wordpress">
+        <div class="section-title">
+          <h2>WordPress & CMS Work</h2>
+        </div>
+
+        <article class="art-project">
+          <div class="single-art">
+            <img src="../../Portfolio/web design/wordpress/hp1.png"
+                 alt="Arab Kyoushi CMS homepage screenshot"
+                 onclick="openLightbox(this)">
+          </div>
+
+          <div class="art-text">
+            <h3>Building with WordPress</h3>
+
+            <p>
+              The project was built using WordPress, with a focus on learning how content can be
+              managed, organized, edited, and presented through a CMS. I worked with pages,
+              menus, categories, content sections, and layout settings to create a website that
+              could support Japanese learning content.
+            </p>
+
+            <p>
+              The goal was not only to design the visible website, but also to understand how a
+              learning platform could be managed from the backend. This included thinking about
+              how lessons, files, posts, and educational resources could be organized in a way that
+              would be easy to update.
+            </p>
+
+            <p class="tool">
+              Focus: WordPress · CMS Structure · Page Design · Content Organization
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- STRUCTURE -->
+      <section class="art-category" id="structure">
+        <div class="section-title">
+          <h2>Website Structure</h2>
+        </div>
+
+        <p class="section-desc">
+          The website was planned as a structured learning platform for Arabic-speaking students
+          who wanted to study Japanese online.
+        </p>
+
+        <div class="arab-cms-grid">
+          <div>
+            <h3>Homepage</h3>
+            <p>
+              Introduced the platform, the learning idea, and the purpose of Arab Kyoushi.
+            </p>
+          </div>
+
+          <div>
+            <h3>Lessons</h3>
+            <p>
+              Planned sections for organizing Japanese lessons, levels, and learning materials.
+            </p>
+          </div>
+
+          <div>
+            <h3>Resources</h3>
+            <p>
+              Space for PDFs, learning files, grammar explanations, and student support material.
+            </p>
+          </div>
+
+          <div>
+            <h3>Navigation</h3>
+            <p>
+              Clear menu structure to make it easier for students to find content.
+            </p>
+          </div>
+
+          <div>
+            <h3>Admin Editing</h3>
+            <p>
+              CMS-based content editing so pages could be updated without writing code every time.
+            </p>
+          </div>
+
+          <div>
+            <h3>Visual Identity</h3>
+            <p>
+              A simple visual direction connected to Japanese learning and educational content.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREENSHOTS -->
+      <section class="art-category" id="screenshots">
+        <div class="section-title">
+          <h2>Screenshots</h2>
+        </div>
+
+        <p class="section-desc">
+          I will add screenshots here to show the WordPress layout, page structure,
+          navigation, and content sections.
+        </p>
+
+        <div class="arab-cms-screenshot-grid">
+          <img src="../../Portfolio/web design/wordpress/sc1.png"
+               alt="Arab Kyoushi CMS screenshot"
+               onclick="openLightbox(this)">
+
+          <img src="../../Portfolio/web design/wordpress/sc2.png"
+               alt="Arab Kyoushi CMS screenshot"
+               onclick="openLightbox(this)">
+
+          <img src="../../Portfolio/web design/wordpress/sc3.png"
+               alt="Arab Kyoushi CMS screenshot"
+               onclick="openLightbox(this)">
+
+          <img src="../../Portfolio/web design/wordpress/sc4.png"
+               alt="Arab Kyoushi CMS screenshot"
+               onclick="openLightbox(this)">
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="art-category" id="process">
+        <div class="section-title">
+          <h2>Design & Development Process</h2>
+        </div>
+
+        <div class="process-list">
+          <div>
+            <span>01</span>
+            <h3>Concept Planning</h3>
+            <p>
+              I started by defining the idea of Arab Kyoushi as a Japanese learning platform
+              for Arabic-speaking students.
+            </p>
+          </div>
+
+          <div>
+            <span>02</span>
+            <h3>CMS Structure</h3>
+            <p>
+              I planned how lessons, pages, resources, and categories could be structured inside WordPress.
+            </p>
+          </div>
+
+          <div>
+            <span>03</span>
+            <h3>WordPress Setup</h3>
+            <p>
+              I worked with WordPress pages, menus, page sections, media, content editing,
+              and website configuration.
+            </p>
+          </div>
+
+          <div>
+            <span>04</span>
+            <h3>Page Design</h3>
+            <p>
+              I designed the pages with focus on clarity, educational content, navigation,
+              and a simple student-friendly layout.
+            </p>
+          </div>
+
+          <div>
+            <span>05</span>
+            <h3>Content Organization</h3>
+            <p>
+              I organized text, learning sections, resources, and visual content to make the site
+              easier to browse and maintain.
+            </p>
+          </div>
+
+          <div>
+            <span>06</span>
+            <h3>Reflection</h3>
+            <p>
+              Since it was a school project, it was not used as the real platform, but it gave me
+              important experience in CMS thinking and WordPress design.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOOLS -->
+      <section class="art-ending" id="tools">
+        <h2>Tools & Skills</h2>
+
+        <p>
+          This project helped me understand how to build and organize a content-based website
+          using WordPress. It also gave me experience in CMS structure, page layout, navigation,
+          content management, and designing for educational platforms.
+        </p>
+
+        <p class="tool">
+          WordPress · CMS · Page Design · Website Structure · Content Organization · Navigation Design
+        </p>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Rama <span>Al Mawed</span></div>
+ 
+  <div class="footer-links">
+    <a href="../../art.html">Art</a>
+    <a href="../../graphic-design.html">Design</a>
+    <a href="../../web-design.html">Web</a>
+    <a href="../../video.html">Video</a>
+    <a href="../../contact.html">Contact</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('open')">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+function openLightbox(img) {
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox').classList.add('open');
+}
+
+function closeLightbox(e) {
+  if (e.target === document.getElementById('lightbox')) {
+    document.getElementById('lightbox').classList.remove('open');
+  }
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.getElementById('lightbox').classList.remove('open');
+  }
+});
+
+const projectsToggle = document.querySelector(".projects-toggle");
+
+if (projectsToggle) {
+  projectsToggle.addEventListener("click", function(e) {
+    e.preventDefault();
+    this.nextElementSibling.classList.toggle("open");
+  });
+}
+</script>
+
+</body>
+</html>

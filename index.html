@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rama Al Mawed — UX Designer & Creative</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">Rama <span>Al Mawed</span></a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+  <span></span><span></span><span></span>
+</button>
+  <ul class="nav-links">
+  <li><a href="index.html" class="active">Home</a></li>
+ <li class="dropdown">
+  <a href="#" class="projects-toggle">Projects</a>
+  <ul class="dropdown-menu">
+    <li><a href="art.html">Art</a></li>
+    <li><a href="graphic-design.html">Graphic Design</a></li>
+    <li><a href="web-design.html">Web Design</a></li>
+    <li><a href="video.html">Video</a></li>
+  </ul>
+</li>
+  <li><a href="cv.html">CV</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<div class="page-wrapper">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-eyebrow">UX Designer · Graphic Designer · Creator</span>
+      <h1 class="hero-name">Rama<br><em>Al Mawed</em></h1>
+      <p class="hero-title">Bachelor's in Digital Media · University West</p>
+      <p class="hero-bio">
+        A creative designer passionate about visual storytelling, user experience, and digital art.
+        From web design and graphic work to hand-drawn illustrations and video — I design with heart.
+      </p>
+      <div class="hero-btns">
+        <a href="contact.html" class="btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="Portfolio/cv photo.jpg" alt="Rama Al Mawed">
+    </div>
+  </section>
+
+  <!-- SKILLS STRIP -->
+  <div class="skills-strip">
+    <h4>Skills &amp; Tools</h4>
+    <div class="skills-grid">
+      <span class="skill-tag">Figma</span>
+      <span class="skill-tag">Adobe Photoshop</span>
+      <span class="skill-tag">Adobe Illustrator</span>
+      <span class="skill-tag">Adobe InDesign</span>
+      <span class="skill-tag">Adobe XD</span>
+      <span class="skill-tag">After Effects</span>
+      <span class="skill-tag">Premiere Pro</span>
+      <span class="skill-tag">HTML &amp; CSS</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">React JS</span>
+      <span class="skill-tag">WordPress</span>
+      <span class="skill-tag">UX Design</span>
+    </div>
+  </div>
+
+  <!-- PROJECTS OVERVIEW -->
+  <div class="section-header">
+    <span class="label">Portfolio</span>
+    <h2>What I Create</h2>
+    <p>A diverse range of creative work spanning digital design, illustration, web development, and video production.</p>
+    <div class="divider"></div>
+  </div>
+
+  <div class="projects-preview">
+    <!-- Art -->
+    <a href="art.html" class="project-card">
+      <div class="project-card-img">
+        <img src="Portfolio/art/oc/Blur.PNG" alt="Anime Art">
+      </div>
+      <div class="project-card-body">
+        <p class="tag">Illustration</p>
+        <h3>Art & Illustration</h3>
+        <p>Anime art, original characters, chibi illustrations, and fan art — hand-drawn with passion.</p>
+        <span>Explore Art →</span>
+      </div>
+    </a>
+
+    <!-- Graphic Design -->
+    <a href="graphic-design.html" class="project-card">
+      <div class="project-card-img">
+        <img src="Portfolio/graphic design/logos/alzen logo.png" alt="Magazine Design">
+      </div>
+      <div class="project-card-body">
+        <p class="tag">Graphic Design</p>
+        <h3>Graphic Design</h3>
+        <p>Magazines, posters, logo design, books, and Japanese teaching materials for Alzenins.com.</p>
+        <span>Explore Design →</span>
+      </div>
+    </a>
+
+    <!-- Web Design -->
+    <a href="web-design.html" class="project-card">
+      <div class="project-card-img">
+        <img src="Portfolio/web design/RamaLyrics React JS/IMG_5379-landscape.png" alt="Web Design">
+      </div>
+      <div class="project-card-body">
+        <p class="tag">Web Design &amp; Development</p>
+        <h3>Web Design</h3>
+        <p>HTML/CSS websites, React JS apps, WordPress development, and UX design projects.</p>
+        <span>Explore Web →</span>
+      </div>
+    </a>
+
+    <!-- Video -->
+    <a href="video.html" class="project-card">
+      <div class="project-card-img">
+        <img src="Portfolio/art/gymnasiearbete/IMG_4252.JPG" alt="Web Design">
+      </div>
+      <div class="project-card-body">
+        <p class="tag">Video Production</p>
+        <h3>Video Edits</h3>
+        <p>Motion graphics, short films, and video edits produced with Premiere Pro and After Effects.</p>
+        <span>Watch Videos →</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- ABOUT STRIP -->
+  <div class="about-strip">
+    <div>
+      <h2>More Than<br>a <em>Designer</em></h2>
+      <p>
+        I'm Rama Al Mawed — a recent Digital Media graduate from University West with a passion for creating meaningful visual experiences.
+        My work bridges the gap between aesthetics and function, whether it's a sleek UI, a vibrant poster, or a hand-drawn illustration.
+      </p>
+      <p>
+        Beyond design, I'm a Japanese language teacher who has taught over 500 students worldwide, and a co-founder of
+        <a href="https://alzenins.com" target="_blank" rel="noopener noreferrer" style="color: var(--salmon); font-weight: bold; text-decoration: none;">Alzenins.com</a> — an online Japanese learning platform where I bring together
+        my design skills and teaching passion.
+      </p>
+      <div class="stats">
+        <div class="stat">
+          <span class="num">500+</span>
+          <span class="label">Students Taught</span>
+        </div>
+        <div class="stat">
+          <span class="num">4+</span>
+          <span class="label">Languages Spoken</span>
+        </div>
+        <div class="stat">
+          <span class="num">10+</span>
+          <span class="label">Design Projects</span>
+        </div>
+        <div class="stat">
+          <span class="num">2025</span>
+          <span class="label">Graduate</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="langs">
+        <h4>Languages</h4>
+        <div class="lang-bar">
+          <p class="lang-name">Arabic</p>
+          <div class="lang-track"><div class="lang-fill" style="width:100%"></div></div>
+        </div>
+        <div class="lang-bar">
+          <p class="lang-name">Swedish</p>
+          <div class="lang-track"><div class="lang-fill" style="width:95%"></div></div>
+        </div>
+        <div class="lang-bar">
+          <p class="lang-name">English</p>
+          <div class="lang-track"><div class="lang-fill" style="width:90%"></div></div>
+        </div>
+        <div class="lang-bar">
+          <p class="lang-name">Japanese</p>
+          <div class="lang-track"><div class="lang-fill" style="width:65%"></div></div>
+        </div>
+      </div>
+
+      <div style="margin-top:3rem;">
+        <h4 style="color:var(--salmon);margin-bottom:1rem;">Looking for opportunities in</h4>
+        <ul style="list-style:none;">
+          <li style="color:rgba(232,213,192,0.8);font-family:Arial,sans-serif;font-size:0.95rem;padding:0.6rem 0;border-bottom:1px solid rgba(255,255,255,0.1);">✦ Web Design (design only or combined with coding)</li>
+          <li style="color:rgba(232,213,192,0.8);font-family:Arial,sans-serif;font-size:0.95rem;padding:0.6rem 0;border-bottom:1px solid rgba(255,255,255,0.1);">✦ UX / UI Design</li>
+          <li style="color:rgba(232,213,192,0.8);font-family:Arial,sans-serif;font-size:0.95rem;padding:0.6rem 0;border-bottom:1px solid rgba(255,255,255,0.1);">✦ Graphic Design</li>
+          <li style="color:rgba(232,213,192,0.8);font-family:Arial,sans-serif;font-size:0.95rem;padding:0.6rem 0;">✦ Video Editing & Social Media</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT CTA -->
+  <div style="background:var(--cream);padding:5rem 4rem;text-align:center;">
+    <span class="label" style="color:var(--salmon);font-family:Arial,sans-serif;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.3em;display:block;margin-bottom:1rem;">Let's Work Together</span>
+    <h2 style="color:var(--green);margin-bottom:1rem;">Have a project in mind?</h2>
+    <p style="max-width:500px;margin:0 auto 2rem;">Whether you're looking for a designer, collaborator, or just want to say hi — I'd love to hear from you.</p>
+    <a href="contact.html" class="btn-primary" style="display:inline-block;">Get in Touch</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Rama <span>Al Mawed</span></div>
+  <div class="footer-links">
+    <a href="art.html">Art</a>
+    <a href="graphic-design.html">Design</a>
+    <a href="web-design.html">Web</a>
+    <a href="video.html">Video</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+<script>
+const projectsToggle = document.querySelector(".projects-toggle");
+
+projectsToggle.addEventListener("click", function(e) {
+
+    e.preventDefault();
+
+    if (window.innerWidth <= 900) {
+        this.nextElementSibling.classList.toggle("open");
+    }
+
+});
+</script>
+</body>
+</html>

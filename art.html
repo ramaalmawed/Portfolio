@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art & Illustration — Rama Al Mawed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Rama <span>Al Mawed</span></a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+  <span></span><span></span><span></span>
+</button>
+  <ul class="nav-links">
+  <li><a href="index.html" class="active">Home</a></li>
+ <li class="dropdown">
+  <a href="#" class="projects-toggle">Projects</a>
+  <ul class="dropdown-menu">
+    <li><a href="art.html"class="active">Art</a></li>
+    <li><a href="graphic-design.html">Graphic Design</a></li>
+    <li><a href="web-design.html">Web Design</a></li>
+    <li><a href="video.html">Video</a></li>
+  </ul>
+</li>
+  <li><a href="cv.html">CV</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<div class="page-wrapper">
+
+  <!-- PAGE HERO -->
+  <div class="art-layout">
+
+  <!-- SIDE NAV -->
+  <aside class="art-side-nav">
+    <a href="#my-oc">My OC</a>
+    <a href="#anime-art">Anime Art</a>
+    <a href="#chibi-art">Chibi Art</a>
+    <a href="#friends-oc">Friends' OC</a>
+  </aside>
+
+  <!-- MAIN ART CONTENT -->
+  <main class="art-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero art-hero">
+      <div>
+        <h1>Art &amp; <span>Illustration</span></h1>
+        <p>
+          A collection of digital illustrations, original characters, anime-inspired drawings,
+          chibi art, and custom character designs. Most of these works were created using
+          <strong>Medibang Paint</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== MY OC ===== -->
+    <section class="art-category featured-oc" id="my-oc">
+      <div class="section-title">
+        <h2>My OC — Original Character</h2>
+      </div>
+
+      <p class="section-desc">
+        My original characters are the most personal part of my art practice. These works focus on
+        character personality, emotion, pose, and storytelling. I used Medibang Paint to create
+        both the clean versions and alternative visual effects.
+      </p>
+
+      <article class="art-project oc-focus">
+        <div class="art-images two-images">
+          <img src="Portfolio/art/oc/Blur.PNG" alt="My OC illustration" onclick="openLightbox(this)">
+          <img src="Portfolio/art/oc/Clear.PNG" alt="My OC clear version" onclick="openLightbox(this)">
+        </div>
+
+        <div class="art-text">
+          <h3>Original Character Design</h3>
+          <p>
+            This OC project allowed me to explore how a character can feel expressive and personal
+            through pose, facial expression, clothing, and small visual details. I worked with clean
+            line art, soft colors, and a character-focused composition.
+          </p>
+          <p class="tool">Platform: Medibang Paint</p>
+        </div>
+      </article>
+
+      <article class="art-project reverse">
+        <div class="art-images two-images">
+         <img src="Portfolio/art/oc/lineart.png" alt="My OC sketch" onclick="openLightbox(this)">
+         <img src="Portfolio/art/oc/color.PNG" alt="My OC blur effect" onclick="openLightbox(this)">
+          </div>
+
+        <div class="art-text">
+          <h3>Sketch & Visual Effect</h3>
+          <p>
+            For this drawing, I experimented with different versions of the same character.
+            The sketch version shows the early structure and line work, while the effect version
+            explores mood, depth, and atmosphere.
+          </p>
+          <p class="tool">Platform: Medibang Paint</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== ANIME ART ===== -->
+    <section class="art-category" id="anime-art">
+      <div class="section-title">
+        <h2>Anime Art</h2>
+      </div>
+
+      <p class="section-desc">
+        Anime-inspired illustrations created from imagination and fan inspiration. These works focus
+        on expressive faces, dramatic poses, ink details, and character mood. I used Medibang Paint
+        for sketching, line art, and coloring.
+      </p>
+
+      <!-- EREN -->
+      <article class="art-project">
+        <div class="single-art">
+          <img src="Portfolio/art/anime/not copied/eren ink.png" alt="Eren Yeager fan art" onclick="openLightbox(this)">
+        </div>
+
+        <div class="art-text">
+          <h3>Eren Yeager</h3>
+          <p>
+            A fan art piece inspired by Eren Yeager. I focused on intensity, expression, and
+            dramatic anime-style character presentation.
+          </p>
+          <p class="tool">Platform: Medibang Paint</p>
+        </div>
+      </article>
+
+      <article class="art-project reverse">
+        <div class="single-art">
+          <img src="Portfolio/art/anime/not copied/eren lineart.png" alt="Eren ink drawing" onclick="openLightbox(this)">
+        </div>
+
+        <div class="art-text">
+          <h3>Lineart Version</h3>
+          <p>
+            This version focuses more on ink work, contrast, and strong line details.
+            I wanted the drawing to feel sharper and more dramatic.
+          </p>
+        </div>
+      </article>
+
+      <article class="art-project">
+        <div class="single-art">
+          <img src="Portfolio/art/anime/not copied/historia.png" alt="Eren alternative artwork" onclick="openLightbox(this)">
+        </div>
+
+        <div class="art-text">
+          <h3>Historia</h3>
+          <p>
+            In this version, I explored a different composition and visual feeling while keeping the
+            anime-inspired style and emotional character focus.
+          </p>
+        </div>
+      </article>
+
+      <!-- SORA -->
+      <article class="art-project reverse">
+        <div class="art-images two-images">
+          <img src="Portfolio/art/anime/not copied/sora color.jpg" alt="Sora anime art" onclick="openLightbox(this)">
+          <img src="Portfolio/art/anime/not copied/sora lineart.png" alt="Sora anime sketch" onclick="openLightbox(this)">
+        </div>
+
+        <div class="art-text">
+          <h3>Sora</h3>
+          <p>
+            Sora includes two versions of the same creative direction. I worked with pose,
+            character energy, and softer anime-style expression.
+          </p>
+          <p class="tool">Platform: Medibang Paint</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== CHIBI ART ===== -->
+    <section class="art-category" id="chibi-art">
+      <div class="section-title">
+        <h2>Chibi Art</h2>
+      </div>
+
+      <p class="section-desc">
+        Chibi illustrations are playful, expressive, and compact. I used this style to practice
+        simplified proportions, cute expressions, and character personality.
+      </p>
+
+      <article class="art-project chibi-block">
+        <div class="art-images two-images">
+          <img src="Portfolio/art/chibi/chibi 1.PNG" alt="Chibi character 2025" onclick="openLightbox(this)">
+          <img src="Portfolio/art/chibi/chibi 2.png" alt="Chibi character 2023" onclick="openLightbox(this)">
+        </div>
+
+        <div class="art-text">
+          <h3>Chibi Character Illustrations</h3>
+          <p>
+            These two chibi drawings show my interest in cute, simplified character design.
+            I focused on soft shapes, expressive faces, and making the characters feel friendly
+            and visually clear.
+          </p>
+          <p class="tool">Platform: Medibang Paint</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== FRIENDS OC ===== -->
+    <section class="art-category" id="friends-oc">
+      <div class="section-title">
+        <h2>Friends' OC</h2>
+      </div>
+
+      <p class="section-desc">
+        Custom original character drawings created for friends. Each character was based on a
+        personal idea, personality, or story, then translated into an anime-inspired illustration.
+      </p>
+
+      <article class="art-project">
+        <div class="art-images two-images">
+          <img src="https://lh3.googleusercontent.com/d/1EAVsGRlHg2z6r1tIr3AjmYNr0oofPOMX" alt="Friend OC sketch" onclick="openLightbox(this)">
+          <img src="https://lh3.googleusercontent.com/d/1CSgPWHGYZIJS7LQ9WepuC_ezzD4R92Iz" alt="Friend OC black and white" onclick="openLightbox(this)">
+        </div>
+
+        <div class="art-text">
+          <h3>Friend OC — Sketch & Black/White</h3>
+          <p>
+            This character started as a sketch and was developed into a cleaner black-and-white
+            illustration. I focused on character identity, hairstyle, expression, and pose.
+          </p>
+          <p class="tool">Platform: Medibang Paint</p>
+        </div>
+      </article>
+
+      <article class="art-project reverse">
+        <div class="art-images two-images">
+          <img src="https://lh3.googleusercontent.com/d/1Pwl20VCTvtFW6ZIeEi3056pZxi4nqEDx" alt="Friend OC illustration" onclick="openLightbox(this)">
+          <img src="https://lh3.googleusercontent.com/d/14hQWFVI6M4XguRiX0zZkIhXB4jCSfAQX" alt="Friend OC full color" onclick="openLightbox(this)">
+        </div>
+
+        <div class="art-text">
+          <h3>Friend OC — Full Color</h3>
+          <p>
+            For this character, I worked more with color, mood, and final presentation.
+            The goal was to make the character feel personal and connected to my friend's idea.
+          </p>
+          <p class="tool">Platform: Medibang Paint</p>
+        </div>
+      </article>
+    </section>
+<section class="art-ending">
+    <h2>Want to See More?</h2>
+
+    <p>
+        This page showcases a selection of my artwork, but it is only a small part of my
+        artistic journey. If you'd like to explore more illustrations, sketches, works in
+        progress, and recent creations, feel free to visit my Instagram.
+    </p>
+
+    <a href="https://www.instagram.com/rama.rin"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="instagram-btn">
+        @rama.rin
+    </a>
+</section>
+  </main>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Rama <span>Al Mawed</span></div>
+  
+  <div class="footer-links">
+    <a href="art.html">Art</a>
+    <a href="graphic-design.html">Design</a>
+    <a href="web-design.html">Web</a>
+    <a href="video.html">Video</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('open')">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+function openLightbox(img) {
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox').classList.add('open');
+}
+
+function closeLightbox(e) {
+  if (e.target === document.getElementById('lightbox')) {
+    document.getElementById('lightbox').classList.remove('open');
+  }
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.getElementById('lightbox').classList.remove('open');
+  }
+});
+
+const projectsToggle = document.querySelector(".projects-toggle");
+
+if (projectsToggle) {
+  projectsToggle.addEventListener("click", function(e) {
+    e.preventDefault();
+    this.nextElementSibling.classList.toggle("open");
+  });
+}
+</script>
+</body>
+</html>

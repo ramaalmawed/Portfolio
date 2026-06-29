@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Design — Rama Al Mawed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Rama <span>Al Mawed</span></a>
+
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="#" class="projects-toggle">Projects</a>
+      <ul class="dropdown-menu">
+        <li><a href="art.html">Art</a></li>
+        <li><a href="graphic-design.html">Graphic Design</a></li>
+        <li><a href="web-design.html" class="active">Web Design</a></li>
+        <li><a href="video.html">Video</a></li>
+      </ul>
+    </li>
+
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="art-layout">
+
+    <!-- RIGHT SIDE NAV -->
+    <aside class="art-side-nav">
+      <a href="#thesis">UX Thesis</a>
+      <a href="#ramalyrics">RamaLyrics</a>
+      <a href="#arab-kyoushi">Arab Kyoushi CMS</a>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="art-content">
+
+      <section class="page-hero art-hero">
+        <div>
+          <h1>Web <span>Design</span></h1>
+          <p>
+            A selection of web design and development projects focusing on user experience,
+            interface design, responsive layout, front-end development, and digital systems.
+          </p>
+        </div>
+      </section>
+
+      <!-- THESIS -->
+      <section class="art-category" id="thesis">
+        <div class="section-title">
+          <h2>UX Thesis — H&M & Zara</h2>
+        </div>
+
+        <p class="section-desc">
+          My bachelor thesis explored how aesthetic and functional design principles affect
+          the user experience on online fashion websites, using H&M and Zara as case studies.
+        </p>
+
+        <article class="art-project">
+          <div class="single-art">
+            <img src="Portfolio/Examensarbete/thesis.png"
+                 alt="UX thesis project"
+                 onclick="openLightbox(this)">
+          </div>
+
+          <div class="art-text">
+            <h3>Fashion E-commerce UX Research</h3>
+            <p>
+              This project focused on understanding how users experience fashion e-commerce
+              websites. I studied how visual design, navigation, filters, product presentation,
+              and usability influence the shopping experience.
+            </p>
+
+            <p>
+              The project included user testing, think-aloud sessions, observation,
+              interviews, analysis, and UX evaluation of H&M and Zara.
+            </p>
+            <a class="details-link" href="projects/web design/thesis.html">
+              View project details →
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- RAMALYRICS -->
+      <section class="art-category" id="ramalyrics">
+        <div class="section-title">
+          <h2>RamaLyrics</h2>
+        </div>
+
+        <p class="section-desc">
+          A React-based lyrics web application designed and developed as a front-end project.
+          The project focused on clean interface design, component structure, and responsive layout.
+        </p>
+
+        <article class="art-project reverse">
+          <div class="single-art">
+            <img src="Portfolio/web design/RamaLyrics React JS/ramalyrics.png"
+                 alt="RamaLyrics app"
+                 onclick="openLightbox(this)">
+          </div>
+
+          <div class="art-text">
+            <h3>Music Lyrics Web App</h3>
+            <p>
+              RamaLyrics is a music lyrics application built with React. I designed and developed
+              the interface with a focus on simple navigation, readable content, and a modern visual style.
+            </p>
+
+            <p>
+              The project helped me practice React components, layout planning, responsive design,
+              and connecting design decisions with functional front-end development.
+            </p>
+
+            <p class="tool">Tools: React JS · HTML · CSS · JavaScript</p>
+
+            <a class="details-link" href="projects/web design/ramalyrics.html">
+              View project details →
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- ARAB KYOUSHI CMS -->
+      <section class="art-category" id="arab-kyoushi">
+        <div class="section-title">
+          <h2>Arab Kyoushi</h2>
+        </div>
+
+        <p class="section-desc">
+          A CMS concept for managing Japanese learning content, lessons, students, materials,
+          and educational resources for Arabic-speaking learners.
+        </p>
+
+        <article class="art-project">
+          <div class="single-art">
+            <img src="Portfolio/web design/wordpress/arab kyoushi.png"
+                 alt="Arab Kyoushi CMS"
+                 onclick="openLightbox(this)">
+          </div>
+
+          <div class="art-text">
+            <h3>Learning Platform Management System</h3>
+            <p>
+              Arab Kyoushi CMS is a web design concept for organizing and managing Japanese
+              teaching content. The goal was to make the admin experience clear, structured,
+              and easy to use.
+            </p>
+
+            <p>
+              The design focuses on dashboards, lesson organization, student management,
+              content editing, and a clean interface that supports teachers in their daily workflow.
+            </p>
+
+            <p class="tool">Tools: Figma · WordPress</p>
+
+            <a class="details-link" href="projects/web design/arab-kyoushi.html">
+              View project details →
+            </a>
+          </div>
+        </article>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Rama <span>Al Mawed</span></div>
+
+  <div class="footer-links">
+    <a href="art.html">Art</a>
+    <a href="graphic-design.html">Design</a>
+    <a href="web-design.html">Web</a>
+    <a href="video.html">Video</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('open')">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+function openLightbox(img) {
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox').classList.add('open');
+}
+
+function closeLightbox(e) {
+  if (e.target === document.getElementById('lightbox')) {
+    document.getElementById('lightbox').classList.remove('open');
+  }
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.getElementById('lightbox').classList.remove('open');
+  }
+});
+
+const projectsToggle = document.querySelector(".projects-toggle");
+
+if (projectsToggle) {
+  projectsToggle.addEventListener("click", function(e) {
+    e.preventDefault();
+    this.nextElementSibling.classList.toggle("open");
+  });
+}
+</script>
+
+</body>
+</html>

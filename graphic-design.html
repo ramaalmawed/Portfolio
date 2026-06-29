@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphic Design — Rama Al Mawed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Rama <span>Al Mawed</span></a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+  <span></span><span></span><span></span>
+</button>
+  <ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+ <li class="dropdown">
+  <a href="#" class="projects-toggle">Projects</a>
+  <ul class="dropdown-menu">
+    <li><a href="art.html">Art</a></li>
+    <li><a href="graphic-design.html" class="active">Graphic Design</a></li>
+    <li><a href="web-design.html">Web Design</a></li>
+    <li><a href="video.html">Video</a></li>
+  </ul>
+</li>
+  <li><a href="cv.html">CV</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="art-layout">
+
+    <!-- RIGHT SIDE NAV -->
+    <aside class="art-side-nav">
+      <a href="#books">Books</a>
+      <a href="#logos">Logos</a>
+      <a href="#jp-materials">JP Materials</a>
+      <a href="#magazine">Magazine</a>
+      <a href="#posters">Posters</a>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="art-content">
+
+      <section class="page-hero art-hero">
+        <div>
+          <h1>Graphic <span>Design</span></h1>
+          <p>
+            A selection of graphic design projects including magazine layout,
+            poster design, logo systems, print materials, and Japanese learning
+            resources. These projects focus on layout, visual hierarchy,
+            typography, branding, and communication.
+          </p>
+        </div>
+      </section>
+
+      <!-- BOOKS -->
+      <section class="art-category" id="books">
+        <div class="section-title">
+          <h2>Books & Print Materials</h2>
+        </div>
+
+        <p class="section-desc">
+          Print materials such as books, planners, notebooks, and calendars
+          designed with attention to page layout, usability, and print format.
+        </p>
+
+        <article class="art-project reverse">
+          <div class="single-art">
+            <img src="Portfolio/graphic design/books/totoro calendar.png"
+                 alt="Book design"
+                 onclick="openLightbox(this)">
+          </div>
+
+          <div class="art-text">
+            <h3>Learning Book & Printed Materials</h3>
+            <p>
+              This work includes layout design for educational and personal-use
+              print materials. I focused on readability, page structure, visual
+              consistency, and preparing the designs for print.
+            </p>
+
+            <p class="tool">Tools: Adobe InDesign · Illustrator</p>
+
+            <a class="details-link" href="projects/graphic design/book-design.html">
+              View project details →
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- LOGOS -->
+      <section class="art-category" id="logos">
+        <div class="section-title">
+          <h2>Logo Design</h2>
+        </div>
+
+        <p class="section-desc">
+          Logo and identity design projects, including the visual identity for
+          Alzenins.com, the Japanese learning platform I co-founded.
+        </p>
+
+        <article class="art-project">
+          <div class="art-images two-images">
+            <img src="Portfolio/graphic design/logos/z logo pink.png"
+                 alt="Logo design"
+                 onclick="openLightbox(this)">
+            <img src="Portfolio/graphic design/logos/alzen logo pink.png"
+                 alt="Logo variation"
+                 onclick="openLightbox(this)">
+          </div>
+
+          <div class="art-text">
+            <h3>Alzenins.com Brand Identity</h3>
+            <p>
+              For Alzenins.com, I designed a flexible logo system that could be
+              used across the website, learning materials, social media, and
+              printed documents. The design needed to feel educational,
+              approachable, and connected to Japanese language learning.
+            </p>
+
+            <p class="tool">Tools: Adobe Illustrator</p>
+
+            <a class="details-link" href="projects/graphic design/logos.html">
+              View project details →
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- JP MATERIALS -->
+      <section class="art-category" id="jp-materials">
+        <div class="section-title">
+          <h2>Japanese Teaching Materials</h2>
+        </div>
+
+        <p class="section-desc">
+          Educational graphic design created for Japanese language learners,
+          including slides, visual explanations, grammar materials, and learning
+          resources.
+        </p>
+
+        <article class="art-project">
+          <div class="single-art">
+            <img src="Portfolio/graphic design/jp files/jp2.png"
+                 alt="Japanese teaching material"
+                 onclick="openLightbox(this)">
+          </div>
+
+          <div class="art-text">
+            <h3>Alzenins.com Teaching Slides</h3>
+            <p>
+              I designed Japanese learning materials for Arabic-speaking students.
+              The goal was to make complex grammar, kana, kanji, and sentence
+              structures easier to understand through visual design, hierarchy,
+              examples, and clear layout.
+            </p>
+
+            <p class="tool">Tools: PowerPoint · Illustrator · Photoshop</p>
+
+            <a class="details-link" href="projects/graphic design/jp-materials.html">
+              View project details →
+            </a>
+          </div>
+        </article>
+      </section>
+
+ 
+<section class="art-ending">
+  <h2>Software & Skills</h2>
+
+  <p>
+    These graphic design projects combine layout, typography, print preparation,
+    educational design, branding, visual hierarchy, and content creation.
+  </p>
+
+  <p class="tool">
+    Adobe InDesign · Adobe Illustrator · Adobe Photoshop · PowerPoint
+  </p>
+</section>
+    </main>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Rama <span>Al Mawed</span></div>
+ 
+  <div class="footer-links">
+    <a href="art.html">Art</a>
+    <a href="graphic-design.html">Design</a>
+    <a href="web-design.html">Web</a>
+    <a href="video.html">Video</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('open')">✕</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+<script>
+function openLightbox(el) {
+  const img = el.querySelector('img');
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox(e) {
+  if (e.target === document.getElementById('lightbox')) document.getElementById('lightbox').classList.remove('open');
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('open'); });
+</script>
+</body>
+</html>
