@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Rama Al Mawed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Rama <span>Al Mawed</span></a>
+
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="#" class="projects-toggle">Projects</a>
+      <ul class="dropdown-menu">
+        <li><a href="art.html">Art</a></li>
+        <li><a href="graphic-design.html">Graphic Design</a></li>
+        <li><a href="web-design.html">Web Design</a></li>
+        <li><a href="video.html">Video</a></li>
+      </ul>
+    </li>
+
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="art-layout">
+
+    <!-- RIGHT SIDE NAV -->
+    <aside class="art-side-nav">
+      <a href="#contact">Contact</a>
+      <a href="#opportunities">Opportunities</a>
+      <a href="#form">Message</a>
+      <a href="#location">Location</a>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="art-content">
+
+      <!-- HERO -->
+      <section class="page-hero art-hero" id="contact">
+        <div>
+          <h1>Get in <span>Touch</span></h1>
+          <p>
+            I am open to opportunities in web design, UX/UI design, graphic design,
+            video editing, social media, and creative digital work. I am based in Sweden
+            and open to on-site, hybrid, and online opportunities.
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTACT INFO -->
+      <section class="art-category">
+        <div class="section-title">
+          <h2>Contact Information</h2>
+        </div>
+
+        <div class="contact-cards">
+          <a href="mailto:rama.almawed@gmail.com" class="contact-card">
+            <span>Email</span>
+            <h3>rama.almawed@gmail.com</h3>
+            <p>Best way to reach me for job opportunities, projects, or collaboration.</p>
+          </a>
+
+          <a href="https://www.instagram.com/rama.rin"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="contact-card">
+            <span>Instagram</span>
+            <h3>@rama.rin</h3>
+            <p>Follow my artwork, sketches, visual projects, and creative updates.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- OPPORTUNITIES -->
+      <section class="art-category featured-oc" id="opportunities">
+        <div class="section-title">
+          <h2>What I Am Looking For</h2>
+        </div>
+
+        <p class="section-desc">
+          I am currently looking for creative and digital opportunities where I can combine
+          design, user experience, web, visual communication, and content creation.
+        </p>
+
+        <div class="cv-skill-groups">
+          <div>
+            <h5>Web Design</h5>
+            <p>Design-only roles or web design combined with HTML, CSS, JavaScript, React, or WordPress.</p>
+          </div>
+
+          <div>
+            <h5>UX / UI Design</h5>
+            <p>User-centered design, interface design, Figma, prototyping, usability, and digital experiences.</p>
+          </div>
+
+          <div>
+            <h5>Graphic Design</h5>
+            <p>Branding, layout, typography, social media graphics, posters, books, and digital material.</p>
+          </div>
+
+          <div>
+            <h5>Video Editing & Social Media</h5>
+            <p>Video editing, motion graphics, content creation, visual storytelling, and social media design.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- LOCATION -->
+      <section class="art-category" id="location">
+        <div class="section-title">
+          <h2>Location & Availability</h2>
+        </div>
+
+        <div class="cv-highlight">
+          <h3>Based in Sweden</h3>
+          <p>
+            I am based in Sweden and open to job opportunities locally, remotely, or in hybrid format.
+            I am also interested in online collaborations and digital projects outside Sweden.
+          </p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Rama <span>Al Mawed</span></div>
+  
+  <div class="footer-links">
+    <a href="art.html">Art</a>
+    <a href="graphic-design.html">Design</a>
+    <a href="web-design.html">Web</a>
+    <a href="video.html">Video</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script>
+const projectsToggle = document.querySelector(".projects-toggle");
+
+if (projectsToggle) {
+  projectsToggle.addEventListener("click", function(e) {
+    e.preventDefault();
+    this.nextElementSibling.classList.toggle("open");
+  });
+}
+</script>
+
+</body>
+</html>
